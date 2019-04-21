@@ -3,7 +3,7 @@ i = 0
 array = []
 while i < collection.length 
   if yield(collection[i]) == true
-    array << yield(collection[i])
+    array << collection[i]
   end
   i = i + 1
 end
