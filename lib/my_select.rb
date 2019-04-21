@@ -2,6 +2,10 @@ def my_select(collection)
 i = 0
 array = []
 while i < collection.length 
-  if 
+  if yield(collection[i]) == true
+    array << yield(collection[i])
+  end
+  i = i + 1
 end
+array
 end
